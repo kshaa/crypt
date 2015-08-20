@@ -9,10 +9,11 @@ b = 1
 c = 0  
 
 ## Outputs:
--- Used key
-./test.png.key
--- Crypted image
-./test.png.crypted
+-- Used key  
+./test.png.key  
+
+-- Crypted image  
+./test.png.crypted  
 
 # Encryption modules
 ## Done
