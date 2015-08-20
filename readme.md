@@ -4,9 +4,9 @@
 ./crypt -m quad ./test.png
 
 ## Key input:
-a = 0
-b = 1
-c = 0
+a = 0  
+b = 1  
+c = 0  
 
 ## Outputs:
 -- Used key
@@ -16,8 +16,8 @@ c = 0
 
 # Encryption modules
 ## Done
-* Quadratic encryption
+* Quadratic encryption  
 ## In doing
-* Quadratic decryption
+* Quadratic decryption  
 ## To be done
-* Everything else
+* Everything else  
