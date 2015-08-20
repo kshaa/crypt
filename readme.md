@@ -16,8 +16,11 @@ c = 0
 
 # Encryption modules
 ## Done
-* Quadratic encryption  
+* Quadratic encryption
+
 ## In doing
-* Quadratic decryption  
+* Quadratic decryption
+
 ## To be done
-* Everything else  
+* Everything else
+
