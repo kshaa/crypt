@@ -9,7 +9,7 @@ import Encryptions
 main :: IO ()
 main = run_ flags
 
-flags :: Flag "m" '["module"] "MODULE" "cryption module to be used" String
+flags :: Flag "m" '["module"] "MODULE" "cryption module to be used, possible modules: quad; sqrt; sin; cos; tan; ctg; lg; abs; xor" String
       -> Arg "path to image" [String]
       -> Cmd "Image cryption" ()
 flags mod args = do
@@ -25,15 +25,15 @@ checkPath mod path = do
 checkModule :: String -> String -> Image PixelRGBA8 -> IO ()
 checkModule mod path img = do
     case mod of
-        ("quad") -> qd img path
-        ("unquad") -> uqd img path
-        ("sqrt") -> sq img path
-        ("sin") -> sn img path
-        ("cos") -> cs img path
-        ("tan") -> tn img path
-        ("ctg") -> cg img path
-        ("lg") -> lg img path
-        ("abs") -> ab img path
-        ("xor") -> xr img path
-        otherwise -> error $ "Module \'" ++ mod ++ "\' doesn't exist, see --help for list of usable modules"
+        ("quad")   -> mapImgSave qd img path
+        ("unquad") -> mapImgSave uqd img path
+        ("sqrt")   -> mapImgSave sq img path
+        ("sin")    -> mapImgSave sn img path
+        ("cos")    -> mapImgSave cs img path
+        ("tan")    -> mapImgSave tn img path
+        ("ctg")    -> mapImgSave cg img path
+        ("lg")     -> mapImgSave lg img path
+        ("abs")    -> mapImgSave ab img path
+        ("xor")    -> mapImgSave xr img path
+        otherwise  -> error $ "Module \'" ++ mod ++ "\' doesn't exist, see --help for list of usable modules"
 
