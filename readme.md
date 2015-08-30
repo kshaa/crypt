@@ -1,27 +1,26 @@
-# Example
+# (De/En)crypt images w/ specific functions
 
-## Calling cryption:
-./crypt -m quad ./test.png
+## Syntax:
+./crypt module -k '(key_1, key_2, .. key_n)' /path/to/image.ext
 
-## Key input:
-a = 0  
-b = 1  
-c = 0  
+## Example:
+./crypt quad -k '(0.0, 1.0, 0.0)' ./Images/preview.gif
 
-## Outputs:
--- Used key  
-./test.png.key  
+## Output:
+### Used key  
+./preview.png.cryptedkey  
 
--- Crypted image  
-./test.png.crypted  
+### Crypted image  
+./preview.png.crypted  
 
-# Encryption modules
-## Done
-* Quadratic encryption
+# Cryption functions
+## Working functions
+* Quadratic function  
 
-## In doing
-* Quadratic decryption
+## Functions yet to be coded
+* All decryption functions
+* Most encryption functions
 
-## To be done
-* Everything else
-
+# To-do
+* Add range key
+* Write missing functions
